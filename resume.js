@@ -1,4 +1,21 @@
-
+/*
+function loadJSON(url, callback) {
+  const xhr = new XMLHttpRequest();
+  xhr.overrideMimeType("application/json");
+  xhr.open("GET", url, true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === "200") {
+      callback(xhr.responseText);
+    }
+  };
+  xhr.send(null);
+}
+//usage:
+loadJSON("resources/data.json", function(text) {
+  let data = JSON.parse(text);
+  console.log(data);
+});
+*/
 var main = document.getElementById("maindiv")
 main.classList.add("maindiv");
 
